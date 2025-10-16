@@ -34,8 +34,8 @@ export interface ProjectProps {
   name: string;
   summary: string;
   image: string;
-  linkPreview?: string;
-  linkSource?: string;
+  linkVisit?: string;
+  linkVideo?: string;
 }
 
 export interface AboutProps {

@@ -10,9 +10,9 @@ interface Props {
 const { projects } = Astro.props;
 ---
 
-<Section text="Featured Projects" href="projects">
+<Section text="Full Stack Projects" href="projects">
   {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+    projects.map(({ name, summary, image, linkVideo, linkVisit }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -27,19 +27,21 @@ const { projects } = Astro.props;
               <p class="text-base text-neutral">{summary}</p>
               <div class="flex gap-5 pt-10 text-white">
                 <a
-                  href={linkSource}
+                  href={linkVisit}
                   target="_blank"
                   class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
                 >
-                  Source
+                  Visit
                 </a>
-                <a
-                  href={linkPreview}
+                {
+                  linkVideo && <a
+                  href={linkVideo}
                   target="_blank"
                   class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
                 >
-                  Preview
+                  Video
                 </a>
+                }
               </div>
             </div>
             <div class="flex items-end justify-end overflow-hidden">

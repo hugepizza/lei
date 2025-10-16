@@ -1,97 +1,123 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Lei — Full Stack Web Developer",
+  author: "Leilei Wang",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer based in Leshan, China and Dasmarinas, Philippines. I specialize in full stack web application development and maintenance.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/lei-small.png",
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "Github", href: "https://github.com/hugepizza" },
+    { text: "LinkedIn", href: "https://linkedin.com/in/leilei-wang-3b89b4184" }
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/lei-og.png",
+  canonicalURL: "https://leidev.site",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Leilei Wang",
+    specialty: "Full Stack Web Developer",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Developer based in Leshan, China and Dasmarinas, Philippines. I specialize in full stack web application development and maintenance.",
+    email: "wangleilei950325@gmail.com",
   },
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Freelancer",
+      position: "Full Stack Developer",
+      startDate: "Nov 2022",
+      endDate: "Present",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Collaborated with client teams to design solutions and deliver user-centric projects on time and within budget.",
+        "Responsible for frontend and backend development, ensuring seamless integration, performance optimization, and improved user experience.",
+        "Managed end-to-end deployment, including CI/CD pipeline setup, and production releases.",
+        "Leveraged modern technologies including React, Next.js, Node.js, and Prisma, augmented with Vercel AI Kit, LangChain, and Dify to rapidly develop reusable AI-powered application modules.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "Chenlong Shanghai Information Technology Co., Ltd",
+      position: "Backend Software Engineer",
+      startDate: "Nov 2021",
+      endDate: "Oct 2022",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Developed and optimized core backend functionalities for UKI(a social media app) serving 1M+ MAU.",
+        "Implemented key business features including Online Real-time features and data processing systems.",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "Shanghai Shuoye Co., Ltd",
+      position: "Backend Software Engineer",
+      startDate: "Apr 2020",
+      endDate: "Nov 2021",
+      summary: [
+        "Worked on projects such as a virtual service trading web app and a game streamer data analysis system.",
+        "Led architectural research, task allocation, core functionality development, data crawler creation, and cloud-based big data integration.",
+        "Played a key role in developing a robust Kubernetes-based system with over ten microservices.",
+      ],
+    },
+    {
+      company: "Xi'An Fanxiang Co., Ltd",
+      position: "Backend Software Engineer",
+      startDate: "Jul 2018",
+      endDate: "Apr 2020",
+      summary: [
+        "Developed an Integrated Apartment Management Platform, integrating smart device data and designing a smart surveillance system with Raspberry Pi.",
+        "Enhanced system efficiency by synchronizing smart device data with supplier APIs and storing it in a time-series database.",
+      ],
     },
   ],
   projects: [
     {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
+      name: "Celpip Master",
+      summary: `An AI-powered CELPIP exam simulator (Next.js/Hono) with 16+ authentic question types, achieving 100% UI parity across all test sections.`,
+      linkVisit: "https://celpipmaster.com",
+      linkVideo: "https://assets.leidev.site/celpipmaster.mp4",
+      image: "/celpipmaster.png",
     },
     {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
+      name: "Easy Interview",
+      summary: `An application designed to automate recruitment processes, simplifying interview management, candidate
+screening, and interview scheduling.`,
+      linkVisit: "https://easyinterview.ai",
+      image: "/easyinterview.png",
     },
     {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
+      name: "TCF Go",
+      summary: "An AI-powered TCF French Language Level exam simulator.",
+      linkVisit: "https://tcfgo.com",
+      linkVideo: "https://assets.leidev.site/tcfgo.mp4",
+      image: "/tcf.png",
+    },
+    {
+      name: "Saki Talent",
+      summary: "A web app that helps international students choose universities and provides a simulated video interview question bank and online interview platform tailored to different schools.",
+      linkVisit: "https://mytalent.ai/programs",
+      linkVideo: "https://assets.leidev.site/saki.mp4",
+      image: "/saki.png",
+    },
+    {
+      name: "Anda Law",
+      summary: "A website for a Canadian immigration consultancy agency that includes real-time visa reference data from the Canadian Immigration Office.",
+      linkVisit: "https://anda.law",
+      image: "/anda.png",
     },
   ],
   about: {
     description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
+      Hi, I'm Leilei Wang, a Full Stack Web Developer with 7+ years of experience building scalable applications and AI-powered solutions. Based in Leshan, China and Dasmarinas, Philippines.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
+      I specialize in modern web technologies including React, Next.js, Node.js, and AI integration. My experience ranges from developing social media platforms serving 1M+ users to creating innovative AI-powered tools like Celpip Master and Easy Interview.
+
+      I'm passionate about delivering end-to-end solutions that combine technical excellence with user-centric design, whether it's building robust backend systems or crafting intuitive frontend interfaces.
     `,
-    image: "/alejandro-big.jpg",
+    image: "/lei-big.png",
   },
 };
 
